@@ -41,6 +41,10 @@ $(function(){
       item.name = i;
       arr.push(item);
    });
+
+arr.sort(function(a,b){
+   return (a.age - a.experience) - (b.age - b.experience);
+});
    console.log(arr);
-   
+
 });
